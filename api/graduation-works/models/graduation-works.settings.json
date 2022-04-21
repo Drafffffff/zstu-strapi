@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "graduation_works",
+  "info": {
+    "name": "graduation_works",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "describe": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "videoUrl": {
+      "type": "string"
+    }
+  }
+}

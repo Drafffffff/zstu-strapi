@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/studio",
+      "handler": "studio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/studio",
+      "handler": "studio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/studio",
+      "handler": "studio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

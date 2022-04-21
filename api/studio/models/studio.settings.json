@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "studios",
+  "info": {
+    "name": "Studio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fwsjyshcx": {
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.studio"
+    },
+    "szwc": {
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.studio"
+    },
+    "kcxsj": {
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.studio"
+    },
+    "jjsj": {
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.studio"
+    },
+    "qdyjs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.studio"
+    }
+  }
+}

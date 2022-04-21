@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_centers",
+  "info": {
+    "name": "NewsCenter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "videourl": {
+      "type": "text"
+    },
+    "news_category": {
+      "model": "news-category",
+      "via": "news_centers"
+    },
+    "discribe": {
+      "type": "text"
+    }
+  }
+}

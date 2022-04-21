@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/studio-works",
+      "handler": "studio-works.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/studio-works/count",
+      "handler": "studio-works.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/studio-works/:id",
+      "handler": "studio-works.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/studio-works",
+      "handler": "studio-works.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/studio-works/:id",
+      "handler": "studio-works.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/studio-works/:id",
+      "handler": "studio-works.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

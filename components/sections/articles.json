@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_articles",
+  "info": {
+    "name": "articles",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discribe": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "videoUrl": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

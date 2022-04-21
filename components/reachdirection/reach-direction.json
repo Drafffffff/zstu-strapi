@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reachdirection_reach_directions",
+  "info": {
+    "name": "ReachDirection",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "direction_ZH": {
+      "type": "string"
+    },
+    "direction_EN": {
+      "type": "string"
+    }
+  }
+}

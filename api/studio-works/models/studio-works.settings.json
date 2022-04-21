@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studio_works",
+  "info": {
+    "name": "StudioWorks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "describe": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "studio_category": {
+      "model": "studio-category",
+      "via": "studio_works"
+    }
+  }
+}

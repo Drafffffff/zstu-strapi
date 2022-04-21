@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_works",
+  "info": {
+    "name": "CourseWorks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": false,
+      "maxLength": 30,
+      "minLength": 5
+    },
+    "course_category": {
+      "via": "course_works",
+      "model": "course-category"
+    },
+    "discribe": {
+      "type": "text",
+      "unique": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 5
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "videourl": {
+      "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 2
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

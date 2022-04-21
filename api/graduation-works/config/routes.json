@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/graduation-works",
+      "handler": "graduation-works.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/graduation-works/count",
+      "handler": "graduation-works.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/graduation-works/:id",
+      "handler": "graduation-works.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/graduation-works",
+      "handler": "graduation-works.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/graduation-works/:id",
+      "handler": "graduation-works.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/graduation-works/:id",
+      "handler": "graduation-works.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

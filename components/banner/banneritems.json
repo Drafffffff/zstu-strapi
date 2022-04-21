@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_banner_banneritems",
+  "info": {
+    "name": "banneritems",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

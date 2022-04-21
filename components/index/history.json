@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_index_histories",
+  "info": {
+    "name": "history",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

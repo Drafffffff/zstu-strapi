@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_categories",
+  "info": {
+    "name": "NewsCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "NewsId": {
+      "type": "integer"
+    },
+    "news_centers": {
+      "via": "news_category",
+      "collection": "news-center"
+    }
+  }
+}

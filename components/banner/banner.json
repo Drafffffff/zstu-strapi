@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_banner_banners",
+  "info": {
+    "name": "banner",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bannerItems1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banneritems"
+    },
+    "bannerItmes2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banneritems"
+    },
+    "bannerItem3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banneritems"
+    }
+  }
+}

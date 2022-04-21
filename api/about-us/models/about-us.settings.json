@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "name": "About us",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "talents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "index.talents"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "index.features"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    },
+    "honor": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "history": {
+      "type": "component",
+      "repeatable": true,
+      "component": "index.history"
+    }
+  }
+}

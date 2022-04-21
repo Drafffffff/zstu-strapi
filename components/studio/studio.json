@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_studio_studios",
+  "info": {
+    "name": "Studio",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Personnel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.person"
+    },
+    "ReachDirection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reachdirection.reach-direction"
+    },
+    "describe": {
+      "type": "richtext"
+    }
+  }
+}

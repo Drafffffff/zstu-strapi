@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_people",
+  "info": {
+    "name": "person",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string"
+    },
+    "describe": {
+      "type": "text"
+    }
+  }
+}

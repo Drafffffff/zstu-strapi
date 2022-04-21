@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "courses",
+  "info": {
+    "name": "course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gysjsh": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.course"
+    },
+    "jcsj": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.course"
+    },
+    "sjtx": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.course"
+    },
+    "yxkzyjh": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.course"
+    },
+    "rjgcx": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.course"
+    }
+  }
+}

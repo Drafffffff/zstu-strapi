@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/graduation-img-2022",
+      "handler": "graduation-img2022.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/graduation-img-2022",
+      "handler": "graduation-img2022.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/graduation-img-2022",
+      "handler": "graduation-img2022.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

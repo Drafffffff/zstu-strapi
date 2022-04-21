@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_categories",
+  "info": {
+    "name": "CourseCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "courserid"
+    },
+    "course_works": {
+      "via": "course_category",
+      "collection": "course-works"
+    },
+    "courserid": {
+      "type": "string"
+    }
+  }
+}

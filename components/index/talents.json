@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_index_talents",
+  "info": {
+    "name": "talents",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "describe": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

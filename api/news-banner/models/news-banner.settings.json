@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_banners",
+  "info": {
+    "name": "newsBanner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "news": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    },
+    "jiangzuo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    },
+    "zhanxun": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    },
+    "tongzhi": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    }
+  }
+}
